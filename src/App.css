@@ -73,7 +73,7 @@
   }
   
   .cardBackground{
-    background-image: url(./images/cardBg.svg);
+    background-image: url(/images/cardBg.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
