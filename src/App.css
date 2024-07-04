@@ -86,10 +86,3 @@
     visibility: hidden;
     display: none;
   }
-  .cardBackgroundGrad{
-    background-image:url(/images/cardBg.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
