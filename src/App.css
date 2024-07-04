@@ -72,12 +72,11 @@
     animation: revslide_out 1s ease-in-out backwards;
   }
   
-  .cardBackground{
+  .horiz-bg{
     background-image: url(/images/cardBg.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  }
+  .vertical-bg{
+    background-image: url(/images/cardBgmobile.png);
   }
   .montserratFont {
     font-family: 'Montserrat' , 'sans-serif';
