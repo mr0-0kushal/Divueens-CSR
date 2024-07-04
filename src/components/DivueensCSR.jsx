@@ -33,7 +33,7 @@ function DivueensCSR() {
                     <img src="/images/pratham.png" alt="Pratham" className="h-full w-full" />
                 </div>
             </div>
-            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg lg:horiz-bg p-6">
+            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg p-6">
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
                     <h1 className="text-4xl font-bold">{cardHeadings[2]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[2]}<br /> <a href="https://www.smilefoundationindia.org/our-story/" className="text-blue-600">..... Read More</a></p>
@@ -51,7 +51,7 @@ function DivueensCSR() {
                     <img src="/images/sewa.jpeg" alt="SEWA" className="h-full w-full" />
                 </div>
             </div>
-            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg lg:horiz-bg p-6">
+            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg p-6">
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
                     <h1 className="text-4xl font-bold">{cardHeadings[4]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[4]}<br /><a href="https://sankalptaru.org/" className="text-blue-600">..... Read More</a></p>
