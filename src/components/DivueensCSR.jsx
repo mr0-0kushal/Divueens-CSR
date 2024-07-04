@@ -21,8 +21,8 @@ function DivueensCSR() {
     return (
         <div className="DivueensCSR min-h-screen bg-gray-300 pt-1 overflow-hidden">
             <div className="banner mb-4 min-h-52 relative">
-                <img src="src/images/TopBanner.jpg" alt="Banner" className="h-full w-full object-cover hidden lg:block" />
-                <img src="src/images/TopBanner_mobile.jpg" alt="BannerMobile" className="h-full w-full object-cover lg:hidden" />
+                <img src="/images/TopBanner.jpg" alt="Banner" className="h-full w-full object-cover hidden lg:block" />
+                <img src="/images/TopBanner_mobile.jpg" alt="BannerMobile" className="h-full w-full object-cover lg:hidden" />
             </div>
             <div className="content flex min-h-52 p-6 flex-col gap-6 lg:flex-row lg:justify-between">
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden">
@@ -30,7 +30,7 @@ function DivueensCSR() {
                     <p className="text-wrap text-left text-xl">{cardParas[1]}<a href='https://www.pratham.org/' className="text-blue-600">..... Read More</a></p>
                 </div>
                 <div className="image lg:h-1/3 lg:w1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="src/images/pratham.png" alt="Pratham" className="h-full w-full" />
+                    <img src="/images/pratham.png" alt="Pratham" className="h-full w-full" />
                 </div>
             </div>
             <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-white lg: cardBackground p-6">
@@ -39,7 +39,7 @@ function DivueensCSR() {
                     <p className="text-wrap text-left text-xl">{cardParas[2]}<br /> <a href="https://www.smilefoundationindia.org/our-story/" className="text-blue-600">..... Read More</a></p>
                 </div>
                 <div className="image lg:h-1/3 lg:w1/3 normal-hidden rounded-md overflow-hidden">
-                    <img src="src/images/smilefoundation.jpg" alt="Smile Foundation" className="h-full w-full" />
+                    <img src="/images/smilefoundation.jpg" alt="Smile Foundation" className="h-full w-full" />
                 </div>
             </div>
             <div className="content flex flex-col gap-6 min-h-52 lg:flex-row lg:justify-between p-6">
@@ -48,7 +48,7 @@ function DivueensCSR() {
                     <p class="text-wrap text-left text-xl">{cardParas[3]}<br /><a href="https://www.sewa.org/about-us/" className="text-blue-600">..... Read More</a></p>
                 </div>
                 <div class="image lg:h-1/3 lg:w-1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="src/images/sewa.jpeg" alt="SEWA" className="h-full w-full" />
+                    <img src="/images/sewa.jpeg" alt="SEWA" className="h-full w-full" />
                 </div>
             </div>
             <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-white lg: cardBackground p-6">
@@ -57,7 +57,7 @@ function DivueensCSR() {
                     <p className="text-wrap text-left text-xl">{cardParas[4]}<br /><a href="https://sankalptaru.org/" className="text-blue-600">..... Read More</a></p>
                 </div>
                 <div class="image lg:h-1/3 lg:w-1/3 normal-hidden rounded-md overflow-hidden">
-                    <img src="src/images/sankalpTaru.jpg" alt="SankalpTaru" className="h-full w-full" />
+                    <img src="/images/sankalpTaru.jpg" alt="SankalpTaru" className="h-full w-full" />
                 </div>
             </div>
             <div className="content flex flex-col min-h-52 gap-6 lg:flex-row lg:justify-between p-6">
@@ -66,7 +66,7 @@ function DivueensCSR() {
                     <p className="text-wrap text-left text-xl">{cardParas[5]}<br /><a href="https://baif.org.in/who-we-are/overview" className="text-blue-600">..... Read More</a></p>
                 </div>
                 <div className="image lg:h-1/3 lg:w-1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="src/images/BAIF.jpeg" alt="BAIF" className="h-full w-full" />
+                    <img src="/images/BAIF.jpeg" alt="BAIF" className="h-full w-full" />
                 </div>
             </div>
         </div>
