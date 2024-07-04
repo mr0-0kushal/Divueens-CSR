@@ -72,10 +72,10 @@
     animation: revslide_out 1s ease-in-out backwards;
   }
   
-  .horiz-bg{
+  .vertical-bg{
     background-image: url(/images/cardBg.svg);
   }
-  .vertical-bg{
+  .horiz-bg{
     background-image: url(/images/cardBgmobile.png);
   }
   .montserratFont {
