@@ -71,12 +71,6 @@
   .revslideout {
     animation: revslide_out 1s ease-in-out backwards;
   }
-  .vertical-bg{
-    background-image: url(/images/cardBgmobile.png);
-  }
-  .montserratFont {
-    font-family: 'Montserrat' , 'sans-serif';
-  }
   .hide-image{
     visibility: hidden;
     display: none;

@@ -1,6 +1,50 @@
 import React from "react";
+import Slider from "./Slider"
+import { useEffect } from 'react'
 
 function DivueensCSR() {
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('slidein');
+              entry.target.classList.remove('slideout', 'normal-hidden');
+            } else {
+              entry.target.classList.add('slideout');
+              entry.target.classList.remove('slidein');
+    
+            }
+          });
+        });
+    
+        const revobserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('revslidein');
+              entry.target.classList.remove('revslideout', 'reverse-hidden');
+            } else {
+              entry.target.classList.add('revslideout');
+              entry.target.classList.remove('revslidein');
+    
+            }
+          });
+        });
+    
+        const hiddenElements = document.querySelectorAll('.normal-hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    
+        const revHiddenElements = document.querySelectorAll('.reverse-hidden');
+        revHiddenElements.forEach((el)=>revobserver.observe(el));
+    
+        return () => {
+          // Clean up observer on unmount
+          hiddenElements.forEach((el) => observer.unobserve(el));
+          revHiddenElements.forEach((el)=> revobserver.unobserve(el));
+        };
+      }, []);
+
+
     const cardHeadings = {
         1: "Pratham Education Foundation",
         2: "Smile Foundation",
@@ -16,8 +60,6 @@ function DivueensCSR() {
         4: "SankalpTaru focuses on environmental conservation through tree plantation drives and community-based forest management, promoting sustainable practices across various regions in India. At SankalpTaru Foundation, we are committed to leveraging cutting-edge technology to combat global warming and climate change. Our initiatives span across 28 states in India, integrating technological advancements to ensure transparency, accountability, and sustainability in our tree plantation efforts.",
         5: "BAIF works on rural development through sustainable livelihood solutions, natural resource management, and community health, aiming to enhance the quality of life in rural areas. BAIF Development Research Foundation has adopted the Gandhian approach to rural prosperity with emphasis on Climate Change Mitigation and Resilient and Sustainable Community Livelihoods. With its multidisciplinary team of about 6000 employees and associates, BAIF is implementing major Nature-positive programmes such as Livestock Development, Natural Resources Management, Agri-Horti-Forestry (Wadi) and Agrobiodiversity Conservation for Sustainable Livelihoods and Enriched Environment. "
     };
-
-
     return (
         <div className="DivueensCSR min-h-screen bg-gray-300 pt-1 overflow-hidden">
             <div className="banner mb-4 min-h-52 relative">
@@ -33,7 +75,7 @@ function DivueensCSR() {
                     <img src="/images/pratham.png" alt="Pratham" className="h-full w-full" />
                 </div>
             </div>
-            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg p-6">
+            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
                     <h1 className="text-4xl font-bold">{cardHeadings[2]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[2]}<br /> <a href="https://www.smilefoundationindia.org/our-story/" className="text-blue-600">..... Read More</a></p>
@@ -51,7 +93,7 @@ function DivueensCSR() {
                     <img src="/images/sewa.jpeg" alt="SEWA" className="h-full w-full" />
                 </div>
             </div>
-            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed vertical-bg p-6">
+            <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
                     <h1 className="text-4xl font-bold">{cardHeadings[4]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[4]}<br /><a href="https://sankalptaru.org/" className="text-blue-600">..... Read More</a></p>
@@ -69,6 +111,11 @@ function DivueensCSR() {
                     <img src="/images/BAIF.jpeg" alt="BAIF" className="h-full w-full" />
                 </div>
             </div>
+            <div className="csrDescription flex flex-col gap-6 items-center vertical-bg min-h-52 p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
+                <h1 className="headingText text-4xl font-bold text-center">Our CSR</h1>
+                <h3 className="subHeadingText text-wrap w-2/3 text-center text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis architecto, excepturi quas delectus tempore laboriosam quaerat harum magnam dignissimos?</h3>
+            </div>
+            <Slider />            
         </div>
 
     )
