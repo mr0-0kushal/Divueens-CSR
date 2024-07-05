@@ -42,12 +42,12 @@ const Slider = () => {
             <Swiper
                 breakpoints={{
                     340: {
-                        slidesPerView: 2,
-                        spaceBetween: 10
+                        slidesPerView: 1,
+                        spaceBetween: 15
                     },
                     700: {
                         slidesPerView: 3,
-                        spaceBetween: 10
+                        spaceBetween: 15
                     }
                 }}
 
@@ -60,7 +60,7 @@ const Slider = () => {
 
                 {ServiceData.map((item) => (
                     <SwiperSlide key={item.title} className='p-4'>
-                        <div className="flex flex-col gap-6 group relative shadow-lg shadow-black rounded-xl px-7 py-8 h-[260px] w-[190px] lg:h-[400px] lg:w-[310px] overflow-hidden">
+                        <div className="flex flex-col gap-6 group relative shadow-md shadow-black rounded-xl px-7 py-8 h-[260px] w-[190px] lg:h-[400px] lg:w-[310px] overflow-hidden">
                             <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage:`url(${item.backgroundImage})`}} />
                             <div className="absolute inset-0 bg-[#FBBDBB] opacity-10 hover:opacity-50" />
                             <div className="relative flex flex-col gap-3">
