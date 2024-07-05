@@ -75,3 +75,10 @@
     visibility: hidden;
     display: none;
   }
+  .swiper-scrollbar{
+    background: transparent;
+    color: rgba(0, 0, 0, 0.179);
+  }
+  .text-shadow-md-white{
+    text-shadow: 0 0 6px white;
+  }
