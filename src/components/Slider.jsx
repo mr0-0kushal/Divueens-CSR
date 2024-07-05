@@ -38,7 +38,7 @@ const Slider = () => {
     ];
 
     return (
-        <div className="slideBar flex items-center justify-center flex-col min-h-60 p-6 bg-transparent">
+        <div className="slideBar flex items-center justify-center flex-col min-h-60 p-3 lg:p-6 bg-transparent">
             <Swiper
                 breakpoints={{
                     340: {
@@ -56,7 +56,7 @@ const Slider = () => {
                     clickable: true
                 }}
                 modules={[FreeMode, Pagination]}
-                className='max-w-[100%] lg:max-w[80%]'>
+                className='max-w-[90%] lg:max-w[80%]'>
 
                 {ServiceData.map((item) => (
                     <SwiperSlide key={item.title} className='p-4'>
@@ -64,7 +64,7 @@ const Slider = () => {
                             <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage:`url(${item.backgroundImage})`}} />
                             <div className="absolute inset-0 bg-[#FBBDBB] opacity-10 hover:opacity-50" />
                             <div className="relative flex flex-col gap-3">
-                                <h1 className='text-xl lg:text-2xl'>{item.title}</h1>
+                                <h1 className='text-xl lg:text-2xl font-bold'>{item.title}</h1>
                                 <p className="text-sm lg:text-[18px]">{item.content}</p>
                            </div>
                         </div>

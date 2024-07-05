@@ -67,53 +67,54 @@ function DivueensCSR() {
                 <img src="/images/TopBanner_mobile.jpg" alt="BannerMobile" className="h-full w-full object-cover lg:hidden" />
             </div>
             <div className="content flex min-h-52 p-6 flex-col gap-6 lg:flex-row lg:justify-between">
-                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden">
+                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden lg:p-7">
+                    
                     <h1 className="text-4xl font-bold">{cardHeadings[1]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[1]}<a href='https://www.pratham.org/' className="text-blue-600">..... Read More</a></p>
                 </div>
-                <div className="image lg:h-1/3 lg:w1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="/images/pratham.png" alt="Pratham" className="h-full w-full" />
+                <div className="image lg:h-1/3 lg:w1/3 reverse-hidden overflow-hidden lg:p-7">
+                    <img src="/images/pratham.png" alt="Pratham" className="h-full w-full rounded-md" />
                 </div>
             </div>
             <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
-                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
+                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden lg:p-7">
                     <h1 className="text-4xl font-bold">{cardHeadings[2]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[2]}<br /> <a href="https://www.smilefoundationindia.org/our-story/" className="text-blue-600">..... Read More</a></p>
                 </div>
-                <div className="image lg:h-1/3 lg:w1/3 normal-hidden rounded-md overflow-hidden">
-                    <img src="/images/smilefoundation.jpg" alt="Smile Foundation" className="h-full w-full" />
+                <div className="image lg:h-1/3 lg:w1/3 normal-hidden overflow-hidden lg:p-7">
+                    <img src="/images/smilefoundation.jpg" alt="Smile Foundation" className="h-full w-full rounded-md" />
                 </div>
             </div>
             <div className="content flex flex-col gap-6 min-h-52 lg:flex-row lg:justify-between p-6">
-                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden">
+                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden lg:p-7">
                     <h1 className="text-4xl font-bold">{cardHeadings[3]}</h1>
                     <p class="text-wrap text-left text-xl">{cardParas[3]}<br /><a href="https://www.sewa.org/about-us/" className="text-blue-600">..... Read More</a></p>
                 </div>
-                <div class="image lg:h-1/3 lg:w-1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="/images/sewa.jpeg" alt="SEWA" className="h-full w-full" />
+                <div class="image lg:h-1/3 lg:w-1/3 reverse-hidden rounded-md overflow-hidden px-7 py-7 pr-11">
+                    <img src="/images/sewa.jpeg" alt="SEWA" className="h-full w-full rounded-md" />
                 </div>
             </div>
             <div className="content box-border flex min-h-52 w-full flex-col gap-6 lg:flex-row-reverse lg:justify-between bg-cover bg-center bg-no-repeat bg-fixed p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
-                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden">
+                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 reverse-hidden lg:p-7">
                     <h1 className="text-4xl font-bold">{cardHeadings[4]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[4]}<br /><a href="https://sankalptaru.org/" className="text-blue-600">..... Read More</a></p>
                 </div>
-                <div class="image lg:h-1/3 lg:w-1/3 normal-hidden rounded-md overflow-hidden">
-                    <img src="/images/sankalpTaru.jpg" alt="SankalpTaru" className="h-full w-full" />
+                <div class="image lg:h-1/3 lg:w-1/3 normal-hidden lg:p-7 overflow-hidden">
+                    <img src="/images/sankalpTaru.jpg" alt="SankalpTaru" className="h-full w-full rounded-md" />
                 </div>
             </div>
             <div className="content flex flex-col min-h-52 gap-6 lg:flex-row lg:justify-between p-6">
-                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden">
+                <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden lg:p-7">
                     <h1 className="text-4xl font-bold">{cardHeadings[5]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[5]}<br /><a href="https://baif.org.in/who-we-are/overview" className="text-blue-600">..... Read More</a></p>
                 </div>
-                <div className="image lg:h-1/3 lg:w-1/3 reverse-hidden rounded-md overflow-hidden">
-                    <img src="/images/BAIF.jpeg" alt="BAIF" className="h-full w-full" />
+                <div className="image lg:h-1/3 lg:w-1/3 reverse-hidden lg:p-7 overflow-hidden">
+                    <img src="/images/BAIF.jpeg" alt="BAIF" className="h-full w-full rounded-md" />
                 </div>
             </div>
             <div className="csrDescription flex flex-col gap-6 items-center vertical-bg min-h-52 p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
                 <h1 className="headingText text-4xl font-bold text-center">Our CSR</h1>
-                <h3 className="subHeadingText text-wrap w-2/3 text-center text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis architecto, excepturi quas delectus tempore laboriosam quaerat harum magnam dignissimos?</h3>
+                <h3 className="subHeadingText text-wrap w-3/4 text-center text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis architecto, excepturi quas delectus tempore laboriosam quaerat harum magnam dignissimos?</h3>
             </div>
             <Slider />            
         </div>
