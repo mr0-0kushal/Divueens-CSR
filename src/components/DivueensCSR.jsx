@@ -111,7 +111,7 @@ function DivueensCSR() {
                     <img src="/images/BAIF.jpeg" alt="BAIF" className="h-full w-full rounded-md" />
                 </div>
             </div>
-            <div className="csrDescription flex flex-col gap-6 items-center vertical-bg min-h-52 p-6" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
+            <div className="csrDescription flex flex-col gap-6 items-center min-h-52 p-6 bg-cover bg-center bg-no-repeat bg-fixed" style={{backgroundImage:'url(/images/cardBgmobile.png)'}}>
                 <h1 className="headingText text-4xl font-bold text-center">Our CSR</h1>
                 <h3 className="subHeadingText text-wrap w-3/4 text-center text-xl ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perspiciatis architecto, excepturi quas delectus tempore laboriosam quaerat harum magnam dignissimos?</h3>
             </div>
