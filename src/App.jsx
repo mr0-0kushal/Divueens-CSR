@@ -2,6 +2,7 @@ import React from "react"
 import Header from "./components/Header"
 import DivueensCSR from "./components/DivueensCSR"
 import Footer from "./components/Footer"
+import './input.css'
 
 import './App.css'
 
