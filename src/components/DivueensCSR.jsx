@@ -68,7 +68,6 @@ function DivueensCSR() {
             </div>
             <div className="content flex min-h-52 p-6 flex-col gap-6 lg:flex-row lg:justify-between">
                 <div className="text flex h-full w-full lg:w-1/2 flex-col gap-4 normal-hidden lg:p-7">
-                    
                     <h1 className="text-4xl font-bold">{cardHeadings[1]}</h1>
                     <p className="text-wrap text-left text-xl">{cardParas[1]}<a href='https://www.pratham.org/' className="text-blue-600">..... Read More</a></p>
                 </div>
