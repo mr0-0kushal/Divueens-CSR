@@ -11,9 +11,9 @@ function App() {
 
   return (
     <div className="App" style={{fontFamily: '"Montserrat", sans'}}>
-      <Header />
+      {/* <Header /> */}
       <DivueensCSR />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }
