@@ -82,3 +82,6 @@
   .text-shadow-md-white{
     text-shadow: 0 0 6px white;
   }
+  .tint:hover + .bg-zoom-out{
+    transform: 0.9;
+  }
