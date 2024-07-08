@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "./Slider"
 import { useEffect } from 'react'
+import './CareerCSR.css' 
 
 function DivueensCSR() {
 
@@ -61,7 +62,7 @@ function DivueensCSR() {
         5: "BAIF works on rural development through sustainable livelihood solutions, natural resource management, and community health, aiming to enhance the quality of life in rural areas. BAIF Development Research Foundation has adopted the Gandhian approach to rural prosperity with emphasis on Climate Change Mitigation and Resilient and Sustainable Community Livelihoods. With its multidisciplinary team of about 6000 employees and associates, BAIF is implementing major Nature-positive programmes such as Livestock Development, Natural Resources Management, Agri-Horti-Forestry (Wadi) and Agrobiodiversity Conservation for Sustainable Livelihoods and Enriched Environment. "
     };
     return (
-        <div className="DivueensCSR min-h-screen bg-gray-300 pt-1 overflow-hidden">
+        <div className="DivueensCSR min-h-screen bg-gray-300 pt-1 overflow-hidden" style={{fontFamily: '"Montserrat", sans'}}>
             <div className="banner mb-4 min-h-52 relative">
                 <img src="/images/TopBanner.jpg" alt="Banner" className="h-full w-full object-cover hidden lg:block" />
                 <img src="/images/TopBanner_mobile.jpg" alt="BannerMobile" className="h-full w-full object-cover lg:hidden" />

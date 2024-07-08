@@ -1,14 +1,11 @@
 import React from "react"
 import DivueensCSR from "./components/CareerCSR/CareerCSR"
-import './input.css'
-
-import '../src/components/CareerCSR/CareerCSR.css'
-
+import './index.css'
 
 function App() {
 
   return (
-    <div className="App" style={{fontFamily: '"Montserrat", sans'}}>
+    <div className="App">
       {/* <Header /> */}
       <DivueensCSR />
       {/* <Footer /> */}
